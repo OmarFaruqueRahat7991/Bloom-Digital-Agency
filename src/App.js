@@ -8,7 +8,7 @@ function App() {
   
   
   return (
-    <div>
+    <div data-theme="aqua" className="max-w-screen-xl mx-auto">
       <RouterProvider router={router}>
 
       </RouterProvider>
