@@ -6,7 +6,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div>
-    <footer className="footer p-10 bg-neutral text-neutral-content text-white p-32">
+    <footer className="footer p-10 bg-neutral text-neutral-content text-white p-32 mb-16">
       <div className="footer-logo">
         <img src={logo} alt="" />
         <p  style={{ whiteSpace : "nowrap"}}>
