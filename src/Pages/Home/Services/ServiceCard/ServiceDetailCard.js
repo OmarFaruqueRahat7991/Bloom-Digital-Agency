@@ -20,7 +20,7 @@ const ServiceDetailCard = () => {
             <button className="btn btn-primary"><Link to={`/checkout/${_id}`}>Buy This Course</Link></button>
           </div>
           <div className="card-actions">
-            <button className="btn btn-primary"><Link to={`/checkout/${_id}`}>Give Review</Link></button>
+            <button className="btn btn-primary"><Link to={`/review/${_id}`}>Give Review</Link></button>
           </div>
         </div>
       </div>
