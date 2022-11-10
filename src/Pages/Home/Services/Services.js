@@ -14,8 +14,8 @@ const Services = () => {
                     <h1 className='text-5xl font-bold '>Bloom's Digital Marketing Services</h1>
                     <p className='text-2xl font-semibold'>Build Brand Recognition as an Industry Leader and Increase Profitability</p>
             </div>
-            <div className='bg-slate-100'>
-                <h2>Total Services Are : {services?.length} </h2>
+            <div className='bg-slate-100 mb-20'>
+                
                 {
                     services?.map(service => <ServiceCard 
                     service={service}
