@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const AllServicesCard = ({ allservice }) => {
 
@@ -8,7 +9,11 @@ const AllServicesCard = ({ allservice }) => {
     return (
         <div style={{marginTop:'100px'}} className="mx-auto card w-96 bg-base-100 shadow-xl bg-cyan-200">
     <figure className="px-10 pt-10">
-      <img src={img} alt="Shoes" className="rounded-xl" />
+    <PhotoProvider>
+      <PhotoView>
+      <img src={img} alt="" className="rounded-xl" />
+          </PhotoView>
+      </PhotoProvider>
     </figure>
     <div className="card-body items-center text-center">
       <h2 className="card-title">{title}</h2>

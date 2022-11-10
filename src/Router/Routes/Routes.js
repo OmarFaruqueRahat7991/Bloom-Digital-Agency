@@ -10,6 +10,7 @@ import AllServices from "../../Pages/Home/Services/AllServices/AllServices";
 import CheckOut from "../../Pages/CheckOut/CheckOut";
 import ReviewPage from "../../Pages/ReviewPage/ReviewPage";
 import ServiceDetailCard from "../../Pages/Home/Services/ServiceCard/ServiceDetailCard";
+import Blogs from "../../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
         {
             path: "/register",
             element: <Register></Register>
+        },
+        {
+            path: "/blogs",
+            element: <Blogs></Blogs>
         },
         {
             path: "*",
