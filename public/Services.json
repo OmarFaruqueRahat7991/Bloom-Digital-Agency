@@ -1,0 +1,44 @@
+[
+    {
+        "service_id": "01",
+        "title": "Search Engine Optimization (SEO)",
+        "img": "https://i.ibb.co/p1S0Bmc/seo.jpg",
+        "price": "100.00",
+        "description": "Through careful keyword research and white hat SEO practices, I can help you achieve higher organic rankings and increased visibility in search results. My internet marketing company performs extensive keyword research, conducts on-page and off-page optimization and tracks your results with Google Search Console. These practices allow me to attract high-quality leads and traffic and increase your conversions as part of your digital marketing solutions."
+    },
+    {
+        "service_id": "05",
+        "title": "Franchise SEO",
+        "img": "https://i.ibb.co/7vWz9S5/Franchise-SEO.jpg",
+        "price": "120.00",
+        "description": "Amplify your market reach and improve your brand reputation with Bloom’s franchise SEO services. I can create a franchise marketing plan around your ideal prospects and service location. I claim and optimize your business listings, publish geo-modified service pages and blog posts, ensure brand consistency and garner positive online reviews from your best customers. In this way, I help you manage and promote all your franchisees and secure high local rankings."
+    },
+    {
+        "service_id": "04",
+        "title": "Local SEO",
+        "img": "https://i.ibb.co/DK0C0RB/Local-SEO.png",
+        "price": "50.00",
+        "description": "Statistics show that 88 percent of consumers searching for local businesses online will call or visit a store within 24 hours. Attract your ideal customers and generate more leads and sales with Bloom’s internet marketing services. My internet marketing company ensures your name, address and phone number (NAP) consistency, enhances your location pages and conducts local link building. I also leverage social media platforms to stay top of mind with your audiences."
+    },
+    {
+        "service_id": "02",
+        "title": "Technical SEO",
+        "img": "https://i.ibb.co/nP4XjpH/technical-SEO.png",
+        "price": "150.00",
+        "description": "Establish a strong online foundation with on-point technical SEO and internet marketing services. As a technical SEO expert I can run crawl error reports, check your HTTPS status codes, optimize your site speed, audit redirects and eliminate duplicate content. In doing so, I increase your website’s crawlability and indexability. I also add structured data markup to your website and facilitate site migration, depending on your needs and requirements."
+    },
+    {
+        "service_id": "03",
+        "title": "Social Media Marketing",
+        "img": "https://i.ibb.co/CJMjh0N/social-media-marketing-logo.png",
+        "price": "100.00",
+        "description": "Ready to expand and market to your audiences on social media? I build social media campaigns to help your business grow and engage your followers. My digital marketing agency identifies your goals, performs competitor benchmarking and evaluates your customers' online behavior. Using data and analytics, I can develop custom social media brand management and paid advertising strategies tailored to your business."
+    },
+    {
+        "service_id": "06",
+        "title": "Pay Per Click (PPC) Management",
+        "img": "https://i.ibb.co/025cSYJ/Pay-Per-Click.png",
+        "price": "200.00",
+        "description": "Reach your customers quickly and with precision with a data-driven PPC campaign. As a PPC Specialist I am AdWords certified, so you can rest easy knowing your campaign is in the hands of a professional. I can create targeted ad copies, optimizes your bidding strategies and device targeting tactics and monitors your ROI for each keyword. I also take advantage of seasonal trends to promote your products and drive high-volume leads and traffic."
+    }
+]
