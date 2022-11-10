@@ -10,7 +10,7 @@ const Services = () => {
         .then(data => setServices(data))
     },[])
     return (
-        <div className='text-center text-black bg-slate-100 pb-20'>
+        <div className='text-center text-black bg-slate-100 pb-20 pt-20'>
             <div className=' mt-20 mb-20'>
                     <h1 className='text-5xl font-bold '>Bloom's Digital Marketing Services</h1>
                     <p className='text-2xl font-semibold'>Build Brand Recognition as an Industry Leader and Increase Profitability</p>
