@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
-    
+const Register = () => {
 
-    const handleLogin = event => {
+    const handleRegister = event => {
         event.preventDefault();
     }
-
     return (
         <div className="relative text-black">
         <img
@@ -20,7 +18,7 @@ const Login = () => {
             <div className="flex flex-col items-center justify-between xl:flex-row">
               <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                  Sign In <br className="hidden md:block" />
+                  Sign Up <br className="hidden md:block" />
                   And Enjoy{' '}
                   <span className="text-teal-accent-400">Special Offers</span>
                 </h2>
@@ -33,7 +31,23 @@ const Login = () => {
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                     Sign In
                   </h3>
-                  <form onSubmit={handleLogin}>
+                  <form onSubmit={handleRegister}>
+                    <div className="mb-1 sm:mb-2">
+                      <label
+                        htmlFor="firstName"
+                        className="inline-block mb-1 font-medium"
+                      >
+                        Name
+                      </label>
+                      <input
+                        placeholder="Enter Your Name"
+                        required
+                        type="text"
+                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        id="name"
+                        name="name"
+                      />
+                    </div>
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="firstName"
@@ -77,7 +91,7 @@ const Login = () => {
                     </div>
                     
                   </form>
-                  <p className='text-center font-bold'>New To Bloom? <Link className='text-blue-600' to='/register'>Register</Link> </p>
+                  <p className='text-center font-bold'>Already Have An Account? <Link className='text-blue-600' to='/login'>Login</Link> </p>
                 </div>
               </div>
             </div>
@@ -87,4 +101,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
