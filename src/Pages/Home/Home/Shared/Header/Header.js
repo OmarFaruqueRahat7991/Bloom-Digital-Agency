@@ -49,7 +49,7 @@ const Header = () => {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal p-0 text-2xl font-semibold">
+        <ul className="menu menu-horizontal p-0 text-xl font-semibold">
           
         {menuItems}
           

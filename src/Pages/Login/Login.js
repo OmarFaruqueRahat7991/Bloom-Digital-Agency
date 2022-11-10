@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Login = () => {
-    
+  const {logInUser} = useContext(AuthContext);
+
+  
 
     const handleLogin = event => {
         event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        logInUser(email,password)
+        .then((result) => {
+            const user = result.user;
+            console.log(user);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
     }
 
     return (
@@ -60,10 +74,10 @@ const Login = () => {
                       <input
                         placeholder="Enter Your Password"
                         required
-                        type="text"
+                        type="password"
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                        id="lastName"
-                        name="lastName"
+                        id="password"
+                        name="password"
                       />
                     </div>
                     
