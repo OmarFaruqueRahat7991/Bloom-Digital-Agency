@@ -43,7 +43,7 @@ const Header = () => {
         <div className="flex ">
             <Link to='/' className="btn btn-ghost normal-case text-xl">
             <img className="footer-logo"  src={logo} alt="" srcset="" />
-            <span className="font-bold text-2xl">Bloom Digital Agency</span> 
+            <span className="font-bold text-2xl ml-2">Bloom Digital Agency</span> 
             </Link>
         </div>
       </div>
