@@ -1,9 +1,15 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
   const {logInUser} = useContext(AuthContext);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const from = location.state?.from?.pathname || "/";
 
   
 
@@ -16,6 +22,7 @@ const Login = () => {
         .then((result) => {
             const user = result.user;
             console.log(user);
+            navigate(from, { replace: true });
           })
           .catch((error) => {
             console.error(error);
@@ -92,6 +99,7 @@ const Login = () => {
                     
                   </form>
                   <p className='text-center font-bold'>New To Bloom? <Link className='text-blue-600' to='/register'>Register</Link> </p>
+                <SocialLogin></SocialLogin>
                 </div>
               </div>
             </div>

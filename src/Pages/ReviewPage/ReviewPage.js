@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const ReviewPage = () => {
-    const {title} = useLoaderData();
+    const {_id , title, price} = useLoaderData();
     const { user } = useContext(AuthContext);
 
     const handlePlaceReview = (event) => {
@@ -14,7 +14,19 @@ const ReviewPage = () => {
         const phone = form.phone.value;
         const address = form.address.value;
         const review = form.review.value;
+
+        const customerReview = {
+            service: _id,
+            serviceName: title,
+            price,
+            customer: name,
+            email,
+            phone,
+            address,
+          };
     }
+
+
     return (
         <section className="p-6 dark:bg-gray-800 dark:text-gray-50 bg-blue-300 text-white">
 	<form onSubmit={handlePlaceReview} novalidate="" action="" className="container flex flex-col mx-auto space-y-12 ng-untouched ng-pristine ng-valid">

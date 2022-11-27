@@ -1,17 +1,43 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from '../../../../../Assets/Logo/favicon.jpg';
+import { AuthContext } from "../../../../../AuthProvider/AuthProvider";
 import './Header.css';
 
 const Header = () => {
 
+  const { user , logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+    .then(() => {
+
+    }).catch((error) => {
+      console.log(error);
+    });
+  }
+
     const menuItems = <>
         <li>
             <Link to='/'>Home</Link>
-            <Link to='/login'>Login</Link>
-            <Link to='/services'>Services</Link>
             <Link to='/blogs'>Blogs</Link>
+            {user?.email ? (
+                <>
+                  
+                    <Link to='/services'>Services</Link>
+                    <Link to='/add'>Add A Service</Link>
+                    <button onClick={handleLogOut} className="btn-ghost">Log Out</button>
+                  
+                </>
+              ) : (
+                
+                  <Link to='/login'>Login</Link>
+               
+              )}
+            
+            
         </li>
+
     
     </>
   return (
@@ -36,7 +62,7 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52  font-semibold"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52   font-medium"
           >
             
             {menuItems}
@@ -50,8 +76,8 @@ const Header = () => {
             </Link>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal p-0 text-xl font-semibold">
+      <div className="navbar-center hidden lg:flex mt-5">
+        <ul className="menu menu-horizontal p-0  font-medium">
           
         {menuItems}
           
